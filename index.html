@@ -113,19 +113,18 @@
 
         .timer-section {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 300px;
+            gap: 100px;
             margin-bottom: 60px;
         }
 
         .timer-display {
-            font-size: 1.2em;
+            font-size: 1em;
             font-weight: 300;
             color: rgba(255, 255, 255, 0.3);
             letter-spacing: 0.5px;
+            text-align: center;
         }
 
         .button-group {
@@ -224,7 +223,7 @@
             </div>
             
             <div class="timer-section">
-                <div class="timer-display" id="timerText">30s</div>
+                <div class="timer-display" id="timerText">Let that question sink in for another 30s</div>
                 <div class="button-group">
                     <button class="action-btn primary" id="nextBtn" disabled>Another prompt please</button>
                     <button class="action-btn" id="backBtn" disabled>Back to type selection</button>
@@ -334,7 +333,12 @@
         }
 
         function updateTimerDisplay() {
-            document.getElementById('timerText').textContent = timeRemaining + 's';
+            const timerText = document.getElementById('timerText');
+            if (timeRemaining > 0) {
+                timerText.textContent = 'Let that question sink in for another ' + timeRemaining + 's';
+            } else {
+                timerText.textContent = 'Ready when you are';
+            }
         }
 
         function nextPrompt() {
