@@ -1,37 +1,467 @@
 [
     {
-        "prompt": "What made you smile today?",
-        "quote": "Happiness is not something ready made. It comes from your own actions.",
-        "author": "Dalai Lama"
+        "prompt": "What was the best part of today?",
+        "quote": "Enjoy the little things, for one day you may look back and realize they were the big things.",
+        "author": "Robert Brault"
     },
     {
-        "prompt": "What is one thing you're grateful for right now?",
-        "quote": null,
-        "author": null
+        "prompt": "What made me smile today?",
+        "quote": "A warm smile is the universal language of kindness.",
+        "author": "William Arthur Ward"
     },
     {
-        "prompt": "How did you show kindness to yourself or others today?",
+        "prompt": "What am I grateful for today?",
+        "quote": "Gratitude turns what we have into enough.",
+        "author": "Melody Beattie"
+    },
+    {
+        "prompt": "What drained my energy today?",
+        "quote": "The energy of the mind is the essence of life.",
+        "author": "Aristotle"
+    },
+    {
+        "prompt": "What gave me energy today?",
+        "quote": "Energy and persistence conquer all things.",
+        "author": "Benjamin Franklin"
+    },
+    {
+        "prompt": "What did I learn today?",
+        "quote": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "prompt": "What would I do differently if I could repeat today?",
+        "quote": "We do not learn from experience... we learn from reflecting on experience.",
+        "author": "John Dewey"
+    },
+    {
+        "prompt": "Who did I help today?",
+        "quote": "The best way to find yourself is to lose yourself in the service of others.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "prompt": "What challenged me today?",
+        "quote": "The greater the obstacle, the more glory in overcoming it.",
+        "author": "Molière"
+    },
+    {
+        "prompt": "What am I proud of from today?",
+        "quote": "Take pride in how far you've come. Have faith in how far you can go.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "What did I avoid today that I should face tomorrow?",
+        "quote": "The cave you fear to enter holds the treasure you seek.",
+        "author": "Joseph Campbell"
+    },
+    {
+        "prompt": "What moment today will I remember?",
+        "quote": "Life is not measured by the number of breaths we take, but by the moments that take our breath away.",
+        "author": "Maya Angelou"
+    },
+    {
+        "prompt": "What surprised me today?",
+        "quote": "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+        "author": "Alan Watts"
+    },
+    {
+        "prompt": "How did I show up for myself today?",
+        "quote": "Self-care is not selfish. You cannot serve from an empty vessel.",
+        "author": "Eleanor Brown"
+    },
+    {
+        "prompt": "What conversation mattered most today?",
+        "quote": "One good conversation can shift the direction of change forever.",
+        "author": "Linda Lambert"
+    },
+    {
+        "prompt": "What did I rush through that deserved more attention?",
+        "quote": "The present moment is filled with joy and happiness. If you are attentive, you will see it.",
+        "author": "Thích Nhất Hạnh"
+    },
+    {
+        "prompt": "What made me feel most alive today?",
+        "quote": "The purpose of life is to live it, to taste experience to the utmost.",
+        "author": "Eleanor Roosevelt"
+    },
+    {
+        "prompt": "What did I do today that aligned with my values?",
+        "quote": "Your beliefs become your thoughts, your thoughts become your words.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "prompt": "What did I do today that didn't align with my values?",
+        "quote": "Integrity is choosing courage over comfort.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "How was I kind to myself today?",
+        "quote": "Talk to yourself like you would to someone you love.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "How was I kind to others today?",
         "quote": "No act of kindness, no matter how small, is ever wasted.",
         "author": "Aesop"
     },
     {
-        "prompt": "What challenge did you face today and how did you handle it?",
-        "quote": null,
-        "author": null
+        "prompt": "What did I notice today that I usually overlook?",
+        "quote": "The real voyage of discovery consists not in seeking new landscapes, but in having new eyes.",
+        "author": "Marcel Proust"
     },
     {
-        "prompt": "What's one thing you learned about yourself today?",
-        "quote": "Knowing yourself is the beginning of all wisdom.",
+        "prompt": "What assumption was I wrong about today?",
+        "quote": "The greatest discovery of all time is that a person can change their future by merely changing their attitude.",
+        "author": "Oprah Winfrey"
+    },
+    {
+        "prompt": "What boundary did I set or fail to set today?",
+        "quote": "Daring to set boundaries is about having the courage to love ourselves.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "What made me anxious today?",
+        "quote": "Anxiety does not empty tomorrow of its sorrows, but only empties today of its strength.",
+        "author": "Charles Spurgeon"
+    },
+    {
+        "prompt": "What brought me peace today?",
+        "quote": "Peace comes from within. Do not seek it without.",
+        "author": "Buddha"
+    },
+    {
+        "prompt": "What did I accomplish today that I didn't expect to?",
+        "quote": "The secret of getting ahead is getting started.",
+        "author": "Mark Twain"
+    },
+    {
+        "prompt": "What distracted me today?",
+        "quote": "The successful warrior is the average man, with laser-like focus.",
+        "author": "Bruce Lee"
+    },
+    {
+        "prompt": "When did I feel most present today?",
+        "quote": "Wherever you are, be all there.",
+        "author": "Jim Elliot"
+    },
+    {
+        "prompt": "What did I resist today, and why?",
+        "quote": "What you resist persists.",
+        "author": "Carl Jung"
+    },
+    {
+        "prompt": "Who inspired me today?",
+        "quote": "Surround yourself with people who inspire you.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "What did I create today?",
+        "quote": "Creativity is intelligence having fun.",
+        "author": "Albert Einstein"
+    },
+    {
+        "prompt": "What opportunity did I miss today?",
+        "quote": "In the middle of difficulty lies opportunity.",
+        "author": "Albert Einstein"
+    },
+    {
+        "prompt": "What opportunity did I seize today?",
+        "quote": "Opportunities don't happen. You create them.",
+        "author": "Chris Grosser"
+    },
+    {
+        "prompt": "How did I handle frustration today?",
+        "quote": "Between stimulus and response there is a space. In that space is our power to choose our response.",
+        "author": "Viktor Frankl"
+    },
+    {
+        "prompt": "What made me laugh today?",
+        "quote": "Laughter is the shortest distance between two people.",
+        "author": "Victor Borge"
+    },
+    {
+        "prompt": "What did I worry about that never happened?",
+        "quote": "Worry is like a rocking chair: it gives you something to do but never gets you anywhere.",
+        "author": "Erma Bombeck"
+    },
+    {
+        "prompt": "What small win can I celebrate from today?",
+        "quote": "Success is the sum of small efforts repeated day in and day out.",
+        "author": "Robert Collier"
+    },
+    {
+        "prompt": "What negative thought did I let dominate today?",
+        "quote": "You are not your thoughts. You are the observer of your thoughts.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "What positive thought can I carry into tomorrow?",
+        "quote": "Once you replace negative thoughts with positive ones, you'll start having positive results.",
+        "author": "Willie Nelson"
+    },
+    {
+        "prompt": "How did I practice patience today?",
+        "quote": "Patience is not the ability to wait, but the ability to keep a good attitude while waiting.",
+        "author": "Joyce Meyer"
+    },
+    {
+        "prompt": "Where did I lack patience today?",
+        "quote": "Rivers know this: there is no hurry. We shall get there some day.",
+        "author": "A.A. Milne"
+    },
+    {
+        "prompt": "What compliment did I receive today?",
+        "quote": "Accept compliments graciously. A simple thank you is more than enough.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "What compliment did I give today?",
+        "quote": "Kind words can be short and easy to speak, but their echoes are truly endless.",
+        "author": "Mother Teresa"
+    },
+    {
+        "prompt": "What did I do today just for me?",
+        "quote": "Self-care is giving the world the best of you, instead of what's left of you.",
+        "author": "Katie Reed"
+    },
+    {
+        "prompt": "What commitment did I keep today?",
+        "quote": "Commitment is doing the thing you said you were going to do long after the mood you said it in has left you.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "What commitment did I break today?",
+        "quote": "Mistakes are proof that you are trying.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "How was my energy level today compared to yesterday?",
+        "quote": "Energy is the currency of life. Spend it wisely.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "What habit served me well today?",
+        "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
         "author": "Aristotle"
     },
     {
-        "prompt": "Who or what inspired you today?",
-        "quote": null,
-        "author": null
+        "prompt": "What habit undermined me today?",
+        "quote": "The chains of habit are too weak to be felt until they are too strong to be broken.",
+        "author": "Samuel Johnson"
     },
     {
-        "prompt": "What moment today would you like to relive?",
-        "quote": "Forever is composed of nows.",
-        "author": "Emily Dickinson"
+        "prompt": "What did I eat today and how did it make me feel?",
+        "quote": "Let food be thy medicine and medicine be thy food.",
+        "author": "Hippocrates"
+    },
+    {
+        "prompt": "How much water did I drink today?",
+        "quote": "Water is the driving force of all nature.",
+        "author": "Leonardo da Vinci"
+    },
+    {
+        "prompt": "How well did I sleep last night, and how did it affect today?",
+        "quote": "Sleep is the golden chain that ties health and our bodies together.",
+        "author": "Thomas Dekker"
+    },
+    {
+        "prompt": "What physical discomfort did I experience today?",
+        "quote": "The body is your temple. Keep it pure and clean for the soul to reside in.",
+        "author": "B.K.S. Iyengar"
+    },
+    {
+        "prompt": "When did I feel most connected to others today?",
+        "quote": "Connection is why we're here. It's what gives purpose and meaning to our lives.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "When did I feel most disconnected today?",
+        "quote": "We're all islands shouting lies to each other across seas of misunderstanding.",
+        "author": "Rudyard Kipling"
+    },
+    {
+        "prompt": "What technology added value to my day?",
+        "quote": "Technology is best when it brings people together.",
+        "author": "Matt Mullenweg"
+    },
+    {
+        "prompt": "What technology wasted my time today?",
+        "quote": "The cost of a thing is the amount of life which is required to be exchanged for it.",
+        "author": "Henry David Thoreau"
+    },
+    {
+        "prompt": "What did I say no to today?",
+        "quote": "You can be a good person with a kind heart and still say no.",
+        "author": "Lori Deschene"
+    },
+    {
+        "prompt": "What did I say yes to today?",
+        "quote": "When you say yes to others, make sure you are not saying no to yourself.",
+        "author": "Paulo Coelho"
+    },
+    {
+        "prompt": "What triggered stress for me today?",
+        "quote": "It's not stress that kills us, it is our reaction to it.",
+        "author": "Hans Selye"
+    },
+    {
+        "prompt": "How did I manage stress today?",
+        "quote": "You must learn to let go. Release the stress. You were never in control anyway.",
+        "author": "Steve Maraboli"
+    },
+    {
+        "prompt": "What made me feel valued today?",
+        "quote": "The greatest good you can do for another is not just to share your riches but to reveal to him his own.",
+        "author": "Benjamin Disraeli"
+    },
+    {
+        "prompt": "What made me feel invisible today?",
+        "quote": "The worst distance between two people is misunderstanding.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "What did I postpone today?",
+        "quote": "Procrastination is the art of keeping up with yesterday.",
+        "author": "Don Marquis"
+    },
+    {
+        "prompt": "What did I complete today that I've been putting off?",
+        "quote": "The way to get started is to quit talking and begin doing.",
+        "author": "Walt Disney"
+    },
+    {
+        "prompt": "What risk did I take today?",
+        "quote": "Do one thing every day that scares you.",
+        "author": "Eleanor Roosevelt"
+    },
+    {
+        "prompt": "What risk did I avoid today?",
+        "quote": "The biggest risk is not taking any risk.",
+        "author": "Mark Zuckerberg"
+    },
+    {
+        "prompt": "How did I react to criticism today?",
+        "quote": "Criticism, like rain, should be gentle enough to nourish a person's growth without destroying their roots.",
+        "author": "Frank A. Clark"
+    },
+    {
+        "prompt": "What feedback did I give today?",
+        "quote": "Feedback is the breakfast of champions.",
+        "author": "Ken Blanchard"
+    },
+    {
+        "prompt": "What did I do today that future me will thank me for?",
+        "quote": "Someone is sitting in the shade today because someone planted a tree long ago.",
+        "author": "Warren Buffett"
+    },
+    {
+        "prompt": "What did I do today that future me will regret?",
+        "quote": "In the end, we only regret the chances we didn't take.",
+        "author": "Lewis Carroll"
+    },
+    {
+        "prompt": "How did my morning set the tone for the day?",
+        "quote": "How you start your day is how you live your day. How you live your day is how you live your life.",
+        "author": "Louise Hay"
+    },
+    {
+        "prompt": "What was my mood throughout the day?",
+        "quote": "You can't stop the waves, but you can learn to surf.",
+        "author": "Jon Kabat-Zinn"
+    },
+    {
+        "prompt": "What made me feel in control today?",
+        "quote": "You are not a drop in the ocean. You are the entire ocean in a drop.",
+        "author": "Rumi"
+    },
+    {
+        "prompt": "What made me feel out of control today?",
+        "quote": "Life is 10% what happens to you and 90% how you react to it.",
+        "author": "Charles R. Swindoll"
+    },
+    {
+        "prompt": "What beauty did I notice today?",
+        "quote": "The world is full of magic things, patiently waiting for our senses to grow sharper.",
+        "author": "W.B. Yeats"
+    },
+    {
+        "prompt": "What movement or exercise did I do today?",
+        "quote": "Take care of your body. It's the only place you have to live.",
+        "author": "Jim Rohn"
+    },
+    {
+        "prompt": "How present was I in my conversations today?",
+        "quote": "Most people do not listen with the intent to understand; they listen with the intent to reply.",
+        "author": "Stephen R. Covey"
+    },
+    {
+        "prompt": "What made me feel creative today?",
+        "quote": "Creativity takes courage.",
+        "author": "Henri Matisse"
+    },
+    {
+        "prompt": "What routine anchored my day today?",
+        "quote": "The secret of your future is hidden in your daily routine.",
+        "author": "Mike Murdock"
+    },
+    {
+        "prompt": "What broke my routine today?",
+        "quote": "Life is what happens when you're busy making other plans.",
+        "author": "John Lennon"
+    },
+    {
+        "prompt": "How did I show leadership today?",
+        "quote": "Leadership is not about being in charge. It's about taking care of those in your charge.",
+        "author": "Simon Sinek"
+    },
+    {
+        "prompt": "What conflict did I navigate today?",
+        "quote": "Peace is not the absence of conflict, but the ability to cope with it.",
+        "author": "Dorothy Thompson"
+    },
+    {
+        "prompt": "What made me feel content today?",
+        "quote": "Contentment is not the fulfillment of what you want, but the realization of how much you already have.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "What left me feeling unfulfilled today?",
+        "quote": "The only impossible journey is the one you never begin.",
+        "author": "Tony Robbins"
+    },
+    {
+        "prompt": "How did I invest my time today?",
+        "quote": "Time is more valuable than money. You can get more money, but you cannot get more time.",
+        "author": "Jim Rohn"
+    },
+    {
+        "prompt": "What interrupted my focus today?",
+        "quote": "Concentrate all your thoughts upon the work at hand. The sun's rays do not burn until brought to a focus.",
+        "author": "Alexander Graham Bell"
+    },
+    {
+        "prompt": "What did I forgive today—myself or others?",
+        "quote": "Forgiveness is giving up the hope that the past could have been any different.",
+        "author": "Oprah Winfrey"
+    },
+    {
+        "prompt": "What wisdom from today will I carry forward?",
+        "quote": "The only true wisdom is in knowing you know nothing.",
+        "author": "Socrates"
+    },
+    {
+        "prompt": "How did I make today matter?",
+        "quote": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate.",
+        "author": "Ralph Waldo Emerson"
+    },
+    {
+        "prompt": "What would I tell someone who had the exact same day as me?",
+        "quote": "Be kind, for everyone you meet is fighting a harder battle.",
+        "author": "Plato"
+    },
+    {
+        "prompt": "What am I looking forward to tomorrow?",
+        "quote": "Tomorrow is a new day with no mistakes in it yet.",
+        "author": "L.M. Montgomery"
     }
 ]

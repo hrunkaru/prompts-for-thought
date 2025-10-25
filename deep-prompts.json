@@ -6,8 +6,8 @@
     },
     {
         "prompt": "What fear is holding you back from your true potential?",
-        "quote": null,
-        "author": null
+        "quote": "Everything you want is on the other side of fear.",
+        "author": "Jack Canfield"
     },
     {
         "prompt": "If you could give advice to your younger self, what would it be?",
@@ -16,8 +16,8 @@
     },
     {
         "prompt": "What does inner peace mean to you, and how do you cultivate it?",
-        "quote": null,
-        "author": null
+        "quote": "Peace comes from within. Do not seek it without.",
+        "author": "Buddha"
     },
     {
         "prompt": "What limiting belief about yourself are you ready to let go of?",
@@ -26,8 +26,8 @@
     },
     {
         "prompt": "How do you want to be remembered by those who matter most?",
-        "quote": null,
-        "author": null
+        "quote": "The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience.",
+        "author": "Eleanor Roosevelt"
     },
     {
         "prompt": "What would you do if you weren't afraid of failure?",
@@ -36,7 +36,207 @@
     },
     {
         "prompt": "What truth about yourself have you been avoiding?",
-        "quote": null,
-        "author": null
+        "quote": "The truth will set you free, but first it will piss you off.",
+        "author": "Gloria Steinem"
+    },
+    {
+        "prompt": "What would I do differently if I knew no one would ever find out?",
+        "quote": "The privilege of a lifetime is to become who you truly are.",
+        "author": "Carl Jung"
+    },
+    {
+        "prompt": "If I had to explain my life's work to a wise stranger in one sentence, what would I say—and would I feel proud of it?",
+        "quote": "The two most important days in your life are the day you are born and the day you find out why.",
+        "author": "Mark Twain (attributed)"
+    },
+    {
+        "prompt": "What am I currently optimizing for, and is that what I actually want to be optimizing for?",
+        "quote": "The cost of a thing is the amount of what I will call life which is required to be exchanged for it, immediately or in the long run.",
+        "author": "Henry David Thoreau"
+    },
+    {
+        "prompt": "What belief have I held longest, and what would change if I questioned it today?",
+        "quote": "It is the mark of an educated mind to be able to entertain a thought without accepting it.",
+        "author": "Aristotle"
+    },
+    {
+        "prompt": "When do I feel most like myself—and what does that reveal about the gap between my current life and my natural state?",
+        "quote": "Everyone thinks of changing the world, but no one thinks of changing himself.",
+        "author": "Leo Tolstoy"
+    },
+    {
+        "prompt": "What pattern keeps repeating in my life, and what is it trying to teach me?",
+        "quote": "Until you make the unconscious conscious, it will direct your life and you will call it fate.",
+        "author": "Carl Jung"
+    },
+    {
+        "prompt": "Who have I become in response to the people around me, and is that who I want to be?",
+        "quote": "You are the average of the five people you spend the most time with.",
+        "author": "Jim Rohn"
+    },
+    {
+        "prompt": "What do I need to forgive myself for—not because it was okay, but because carrying it no longer serves me?",
+        "quote": "We are products of our past, but we don't have to be prisoners of it.",
+        "author": "Rick Warren"
+    },
+    {
+        "prompt": "If I died today, what would I most regret not having done—and what's actually stopping me from starting it?",
+        "quote": "The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.",
+        "author": "Mark Twain"
+    },
+    {
+        "prompt": "What am I doing out of momentum rather than intention?",
+        "quote": "The unexamined life is not worth living.",
+        "author": "Socrates"
+    },
+    {
+        "prompt": "A year from now, what do I hope will be different about my inner life (not just my circumstances)?",
+        "quote": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.",
+        "author": "Rumi"
+    },
+    {
+        "prompt": "What parts of my identity am I clinging to that no longer serve me?",
+        "quote": "Life is a series of natural and spontaneous changes. Don't resist them; that only creates sorrow.",
+        "author": "Lao Tzu"
+    },
+    {
+        "prompt": "What would I create if I wasn't worried about being good at it?",
+        "quote": "The master has failed more times than the beginner has even tried.",
+        "author": "Stephen McCranie"
+    },
+    {
+        "prompt": "What conversation am I avoiding, and what is that costing me?",
+        "quote": "The single biggest problem in communication is the illusion that it has taken place.",
+        "author": "George Bernard Shaw"
+    },
+    {
+        "prompt": "Where in my life am I performing rather than being?",
+        "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+        "author": "Ralph Waldo Emerson"
+    },
+    {
+        "prompt": "What would my life look like if I stopped waiting for permission?",
+        "quote": "Your time is limited, don't waste it living someone else's life.",
+        "author": "Steve Jobs"
+    },
+    {
+        "prompt": "What am I pretending not to know?",
+        "quote": "Knowing yourself is the beginning of all wisdom.",
+        "author": "Aristotle"
+    },
+    {
+        "prompt": "If my life were a book, would I want to keep reading?",
+        "quote": "Life isn't about finding yourself. Life is about creating yourself.",
+        "author": "George Bernard Shaw"
+    },
+    {
+        "prompt": "What does my calendar say about my priorities versus what I say my priorities are?",
+        "quote": "You will never find time for anything. If you want time, you must make it.",
+        "author": "Charles Buxton"
+    },
+    {
+        "prompt": "What am I tolerating that I shouldn't be?",
+        "quote": "We accept the love we think we deserve.",
+        "author": "Stephen Chbosky"
+    },
+    {
+        "prompt": "What skill or knowledge would change my life if I committed to learning it this year?",
+        "quote": "An investment in knowledge pays the best interest.",
+        "author": "Benjamin Franklin"
+    },
+    {
+        "prompt": "What boundary do I need to set but haven't?",
+        "quote": "Daring to set boundaries is about having the courage to love ourselves, even when we risk disappointing others.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "What story am I telling myself about why I can't have what I want?",
+        "quote": "The only limits you have are the limits you believe.",
+        "author": "Wayne Dyer"
+    },
+    {
+        "prompt": "When was the last time I felt truly alive, and what was I doing?",
+        "quote": "The purpose of life is to live it, not to spend forever wondering what it could have been.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "What would I do with my time if money were no object?",
+        "quote": "The question isn't who is going to let me; it's who is going to stop me.",
+        "author": "Ayn Rand"
+    },
+    {
+        "prompt": "What am I grateful for that I often take for granted?",
+        "quote": "Gratitude turns what we have into enough.",
+        "author": "Melody Beattie"
+    },
+    {
+        "prompt": "What does success actually mean to me, beyond what society tells me it should mean?",
+        "quote": "Success is not the key to happiness. Happiness is the key to success.",
+        "author": "Albert Schweitzer"
+    },
+    {
+        "prompt": "What relationship in my life needs more attention, and what's preventing me from giving it?",
+        "quote": "The most important thing in life is to learn how to give out love, and to let it come in.",
+        "author": "Morrie Schwartz"
+    },
+    {
+        "prompt": "What am I defending that's no longer worth defending?",
+        "quote": "Sometimes letting things go is an act of far greater power than defending or hanging on.",
+        "author": "Eckhart Tolle"
+    },
+    {
+        "prompt": "If I could start over today, what would I do differently?",
+        "quote": "It is never too late to be what you might have been.",
+        "author": "George Eliot"
+    },
+    {
+        "prompt": "What pain or discomfort am I numbing instead of addressing?",
+        "quote": "The cave you fear to enter holds the treasure you seek.",
+        "author": "Joseph Campbell"
+    },
+    {
+        "prompt": "What does my ideal day look like, and how far am I from living it?",
+        "quote": "The secret of your future is hidden in your daily routine.",
+        "author": "Mike Murdock"
+    },
+    {
+        "prompt": "What would I tell a friend who came to me with my exact problems?",
+        "quote": "Talk to yourself like you would to someone you love.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "What am I sacrificing for comfort that I might need to sacrifice comfort for instead?",
+        "quote": "A ship in harbor is safe, but that is not what ships are built for.",
+        "author": "John A. Shedd"
+    },
+    {
+        "prompt": "What version of myself am I becoming, and is that who I want to be?",
+        "quote": "Be the change that you wish to see in the world.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "prompt": "What am I waiting for the 'right time' to do that I could start today?",
+        "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
+        "author": "Chinese Proverb"
+    },
+    {
+        "prompt": "What hard truth do I need to accept about my current situation?",
+        "quote": "Acceptance doesn't mean resignation; it means understanding that something is what it is and that there's got to be a way through it.",
+        "author": "Michael J. Fox"
+    },
+    {
+        "prompt": "What would my 80-year-old self want me to know right now?",
+        "quote": "In the end, it's not the years in your life that count. It's the life in your years.",
+        "author": "Abraham Lincoln"
+    },
+    {
+        "prompt": "What energizes me versus what drains me, and am I honoring that balance?",
+        "quote": "Energy and persistence conquer all things.",
+        "author": "Benjamin Franklin"
+    },
+    {
+        "prompt": "What would I attempt if I knew I could not fail?",
+        "quote": "Do not be afraid to give up the good to go for the great.",
+        "author": "John D. Rockefeller"
     }
 ]
