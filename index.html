@@ -224,8 +224,8 @@
             <div class="timer-section">
                 <div class="timer-display" id="timerText">30s</div>
                 <div class="button-group">
-                    <button class="action-btn primary" id="nextBtn" onclick="nextPrompt()" disabled>Another prompt please</button>
-                    <button class="action-btn" id="backBtn" onclick="goBack()" disabled>Back to type selection</button>
+                    <button class="action-btn primary" onclick="nextPrompt()">Another prompt please</button>
+                    <button class="action-btn" onclick="goBack()">Back to type selection</button>
                 </div>
             </div>
         </div>
@@ -298,11 +298,6 @@
             timeRemaining = TIMER_DURATION;
             clearInterval(timerInterval);
             
-            const nextBtn = document.getElementById('nextBtn');
-            const backBtn = document.getElementById('backBtn');
-            nextBtn.disabled = true;
-            backBtn.disabled = true;
-            
             updateTimerDisplay();
             
             timerInterval = setInterval(() => {
@@ -311,8 +306,6 @@
                 
                 if (timeRemaining <= 0) {
                     clearInterval(timerInterval);
-                    nextBtn.disabled = false;
-                    backBtn.disabled = false;
                 }
             }, 1000);
         }
