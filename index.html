@@ -90,7 +90,7 @@
         .prompt-text {
             font-size: 2em;
             font-weight: 300;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             line-height: 1.5;
             letter-spacing: -0.3px;
         }
@@ -98,7 +98,7 @@
         .quote {
             font-size: 1em;
             color: rgba(255, 255, 255, 0.6);
-            margin-bottom: 50px;
+            margin-bottom: 100px;
             padding: 24px 0;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -117,8 +117,7 @@
             justify-content: space-between;
             gap: 30px;
             flex-wrap: wrap;
-            margin-top: 80px;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
 
         .timer-display {
@@ -168,6 +167,7 @@
             opacity: 0.3;
             cursor: not-allowed;
             border-color: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
         }
 
         .action-btn:disabled:hover {
@@ -225,8 +225,8 @@
             <div class="timer-section">
                 <div class="timer-display" id="timerText">30s</div>
                 <div class="button-group">
-                    <button class="action-btn primary" id="nextBtn" onclick="nextPrompt()" disabled>Another prompt please</button>
-                    <button class="action-btn" id="backBtn" onclick="goBack()" disabled>Back to type selection</button>
+                    <button class="action-btn primary" id="nextBtn" disabled>Another prompt please</button>
+                    <button class="action-btn" id="backBtn" disabled>Back to type selection</button>
                 </div>
             </div>
         </div>
@@ -296,24 +296,38 @@
         }
 
         function startTimer() {
-            timeRemaining = TIMER_DURATION;
-            clearInterval(timerInterval);
+            // Clear any existing timer
+            if (timerInterval) {
+                clearInterval(timerInterval);
+            }
             
+            timeRemaining = TIMER_DURATION;
+            
+            // Get button elements
             const nextBtn = document.getElementById('nextBtn');
             const backBtn = document.getElementById('backBtn');
+            
+            // Disable buttons at start
             nextBtn.disabled = true;
             backBtn.disabled = true;
             
+            console.log('Timer started - buttons disabled');
+            
+            // Update display immediately
             updateTimerDisplay();
             
+            // Start countdown
             timerInterval = setInterval(() => {
                 timeRemaining--;
                 updateTimerDisplay();
+                
+                console.log('Time remaining:', timeRemaining);
                 
                 if (timeRemaining <= 0) {
                     clearInterval(timerInterval);
                     nextBtn.disabled = false;
                     backBtn.disabled = false;
+                    console.log('Timer complete - buttons enabled');
                 }
             }, 1000);
         }
@@ -323,15 +337,23 @@
         }
 
         function nextPrompt() {
+            console.log('Next prompt clicked');
             loadRandomPrompt();
         }
 
         function goBack() {
+            console.log('Back clicked');
             clearInterval(timerInterval);
             document.getElementById('promptDisplay').classList.remove('active');
             document.getElementById('categorySelection').style.display = 'block';
             currentCategory = null;
         }
+
+        // Add event listeners to buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('nextBtn').addEventListener('click', nextPrompt);
+            document.getElementById('backBtn').addEventListener('click', goBack);
+        });
     </script>
 </body>
 </html>
