@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Reflection Prompts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .category-selection {
+            text-align: center;
+            animation: fadeIn 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 300;
+            margin-bottom: 60px;
+            letter-spacing: -0.5px;
+        }
+
+        .category-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 16px 32px;
+            font-size: 1em;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .category-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .prompt-display {
+            display: none;
+            animation: fadeIn 0.6s ease;
+        }
+
+        .prompt-display.active {
+            display: block;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 500;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .prompt-text {
+            font-size: 1.75em;
+            font-weight: 300;
+            margin-bottom: 40px;
+            line-height: 1.5;
+            letter-spacing: -0.3px;
+        }
+
+        .quote {
+            font-size: 0.95em;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 30px;
+            padding: 24px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .quote-author {
+            display: block;
+            margin-top: 12px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .timer-container {
+            margin: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .timer-display {
+            font-size: 4em;
+            font-weight: 200;
+            color: rgba(255, 255, 255, 0.9);
+            min-width: 120px;
+            text-align: center;
+            letter-spacing: -2px;
+        }
+
+        .timer-bar-container {
+            width: 100%;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .timer-bar {
+            height: 100%;
+            background: white;
+            width: 0%;
+            transition: width 1s linear;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .next-btn {
+            padding: 14px 40px;
+            font-size: 1em;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: transparent;
+            color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            cursor: not-allowed;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .next-btn.enabled {
+            background: white;
+            color: #0a0a0a;
+            border-color: white;
+            cursor: pointer;
+        }
+
+        .next-btn.enabled:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .back-btn {
+            padding: 14px 32px;
+            font-size: 1em;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .checkmark {
+            font-size: 3em;
+            opacity: 0;
+            animation: checkmarkAppear 0.5s ease forwards;
+        }
+
+        @keyframes checkmarkAppear {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="category-selection" id="categorySelection">
+            <h1>Choose Your Reflection</h1>
+            <div class="category-buttons">
+                <button class="category-btn daily" onclick="selectCategory('daily')">
+                    Daily Reflection
+                </button>
+                <button class="category-btn deep" onclick="selectCategory('deep')">
+                    Deep Thoughts
+                </button>
+            </div>
+        </div>
+
+        <div class="prompt-display" id="promptDisplay">
+            <div style="text-align: center;">
+                <span class="category-badge" id="categoryBadge"></span>
+            </div>
+            <div class="prompt-text" id="promptText"></div>
+            <div class="quote" id="quoteContainer" style="display: none;">
+                <div id="quoteText"></div>
+                <span class="quote-author" id="quoteAuthor"></span>
+            </div>
+            <div class="timer-container">
+                <div class="timer-display" id="timerText">30</div>
+                <div class="timer-bar-container">
+                    <div class="timer-bar" id="timerBar"></div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button class="next-btn" id="nextBtn" onclick="nextPrompt()" disabled>Next Prompt</button>
+                <button class="back-btn" onclick="goBack()">Change Category</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let prompts = {
+            daily: [],
+            deep: []
+        };
+        let currentCategory = null;
+        let timerInterval = null;
+        let timeRemaining = 30;
+        const TIMER_DURATION = 30;
+
+        // Load prompts from JSON files
+        async function loadPrompts() {
+            try {
+                const dailyResponse = await fetch('daily-prompts.json');
+                const deepResponse = await fetch('deep-prompts.json');
+                
+                if (!dailyResponse.ok || !deepResponse.ok) {
+                    throw new Error('Failed to load prompts');
+                }
+                
+                prompts.daily = await dailyResponse.json();
+                prompts.deep = await deepResponse.json();
+                
+                console.log('Prompts loaded successfully');
+            } catch (error) {
+                console.error('Error loading prompts:', error);
+                alert('Error loading prompts. Please make sure daily-prompts.json and deep-prompts.json are in the same directory.');
+            }
+        }
+
+        // Load prompts when page loads
+        loadPrompts();
+
+        function selectCategory(category) {
+            if (prompts[category].length === 0) {
+                alert('Prompts not loaded yet. Please wait a moment and try again.');
+                return;
+            }
+            
+            currentCategory = category;
+            document.getElementById('categorySelection').classList.remove('active');
+            document.getElementById('promptDisplay').classList.add('active');
+            loadRandomPrompt();
+        }
+
+        function loadRandomPrompt() {
+            const categoryPrompts = prompts[currentCategory];
+            const randomPrompt = categoryPrompts[Math.floor(Math.random() * categoryPrompts.length)];
+            
+            const badge = document.getElementById('categoryBadge');
+            badge.textContent = currentCategory === 'daily' ? 'Daily Reflection' : 'Deep Thoughts';
+            
+            document.getElementById('promptText').textContent = randomPrompt.prompt;
+            
+            const quoteContainer = document.getElementById('quoteContainer');
+            if (randomPrompt.quote) {
+                document.getElementById('quoteText').textContent = `"${randomPrompt.quote}"`;
+                document.getElementById('quoteAuthor').textContent = `— ${randomPrompt.author}`;
+                quoteContainer.style.display = 'block';
+            } else {
+                quoteContainer.style.display = 'none';
+            }
+            
+            startTimer();
+        }
+
+        function startTimer() {
+            timeRemaining = TIMER_DURATION;
+            const nextBtn = document.getElementById('nextBtn');
+            nextBtn.disabled = true;
+            nextBtn.classList.remove('enabled');
+            
+            const timerBar = document.getElementById('timerBar');
+            timerBar.style.width = '0%';
+            
+            document.getElementById('timerText').classList.remove('checkmark');
+            
+            clearInterval(timerInterval);
+            
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                document.getElementById('timerText').textContent = timeRemaining;
+                
+                const progress = ((TIMER_DURATION - timeRemaining) / TIMER_DURATION) * 100;
+                timerBar.style.width = progress + '%';
+                
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    nextBtn.disabled = false;
+                    nextBtn.classList.add('enabled');
+                    const timerText = document.getElementById('timerText');
+                    timerText.textContent = '✓';
+                    timerText.classList.add('checkmark');
+                }
+            }, 1000);
+        }
+
+        function nextPrompt() {
+            loadRandomPrompt();
+        }
+
+        function goBack() {
+            clearInterval(timerInterval);
+            document.getElementById('promptDisplay').classList.remove('active');
+            document.getElementById('categorySelection').classList.add('active');
+            currentCategory = null;
+        }
+    </script>
+</body>
+</html>
