@@ -1,0 +1,467 @@
+[
+    {
+        "prompt": "Mis oli tänase päeva parim osa?",
+        "quote": "Enjoy the little things, for one day you may look back and realize they were the big things.",
+        "author": "Robert Brault"
+    },
+    {
+        "prompt": "Mis pani mind täna naeratama?",
+        "quote": "A warm smile is the universal language of kindness.",
+        "author": "William Arthur Ward"
+    },
+    {
+        "prompt": "Mille eest olen täna tänulik?",
+        "quote": "Gratitude turns what we have into enough.",
+        "author": "Melody Beattie"
+    },
+    {
+        "prompt": "Mis kurnab mind täna?",
+        "quote": "The energy of the mind is the essence of life.",
+        "author": "Aristotle"
+    },
+    {
+        "prompt": "Mis andis mulle täna energiat?",
+        "quote": "Energy and persistence conquer all things.",
+        "author": "Benjamin Franklin"
+    },
+    {
+        "prompt": "Mida ma täna õppisin?",
+        "quote": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "prompt": "Mida teeksin teisiti, kui saaksin täna uuesti alustada?",
+        "quote": "We do not learn from experience... we learn from reflecting on experience.",
+        "author": "John Dewey"
+    },
+    {
+        "prompt": "Keda ma täna aitasin?",
+        "quote": "The best way to find yourself is to lose yourself in the service of others.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "prompt": "Mis mind täna väljakutse ette seadis?",
+        "quote": "The greater the obstacle, the more glory in overcoming it.",
+        "author": "Molière"
+    },
+    {
+        "prompt": "Mille üle olen tänasest päevast uhke?",
+        "quote": "Take pride in how far you've come. Have faith in how far you can go.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "Mida ma täna vältisin, millega peaksin homme silmitsi seisma?",
+        "quote": "The cave you fear to enter holds the treasure you seek.",
+        "author": "Joseph Campbell"
+    },
+    {
+        "prompt": "Millist tänast hetke ma mäletan?",
+        "quote": "Life is not measured by the number of breaths we take, but by the moments that take our breath away.",
+        "author": "Maya Angelou"
+    },
+    {
+        "prompt": "Mis mind täna üllatas?",
+        "quote": "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+        "author": "Alan Watts"
+    },
+    {
+        "prompt": "Kuidas ma täna enda eest hoolitsesin?",
+        "quote": "Self-care is not selfish. You cannot serve from an empty vessel.",
+        "author": "Eleanor Brown"
+    },
+    {
+        "prompt": "Milline vestlus oli täna kõige olulisem?",
+        "quote": "One good conversation can shift the direction of change forever.",
+        "author": "Linda Lambert"
+    },
+    {
+        "prompt": "Mida ma täna kiiruga tegin, mis oleks väärinud rohkem tähelepanu?",
+        "quote": "The present moment is filled with joy and happiness. If you are attentive, you will see it.",
+        "author": "Thích Nhất Hạnh"
+    },
+    {
+        "prompt": "Mis pani mind täna kõige elavamana tundma?",
+        "quote": "The purpose of life is to live it, to taste experience to the utmost.",
+        "author": "Eleanor Roosevelt"
+    },
+    {
+        "prompt": "Mida ma täna tegin, mis oli kooskõlas minu väärtustega?",
+        "quote": "Your beliefs become your thoughts, your thoughts become your words.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "prompt": "Mida ma täna tegin, mis ei olnud kooskõlas minu väärtustega?",
+        "quote": "Integrity is choosing courage over comfort.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "Kuidas ma täna enda vastu lahke olin?",
+        "quote": "Talk to yourself like you would to someone you love.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "Kuidas ma täna teiste vastu lahke olin?",
+        "quote": "No act of kindness, no matter how small, is ever wasted.",
+        "author": "Aesop"
+    },
+    {
+        "prompt": "Mida ma täna märkasin, mis tavaliselt jääb märkamata?",
+        "quote": "The real voyage of discovery consists not in seeking new landscapes, but in having new eyes.",
+        "author": "Marcel Proust"
+    },
+    {
+        "prompt": "Millise eelduse osas ma täna eksisin?",
+        "quote": "The greatest discovery of all time is that a person can change their future by merely changing their attitude.",
+        "author": "Oprah Winfrey"
+    },
+    {
+        "prompt": "Millise piiri ma täna seadsin või jätsin seadmata?",
+        "quote": "Daring to set boundaries is about having the courage to love ourselves.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "Mis tekitas minus täna ärevust?",
+        "quote": "Anxiety does not empty tomorrow of its sorrows, but only empties today of its strength.",
+        "author": "Charles Spurgeon"
+    },
+    {
+        "prompt": "Mis tõi mulle täna rahu?",
+        "quote": "Peace comes from within. Do not seek it without.",
+        "author": "Buddha"
+    },
+    {
+        "prompt": "Mida ma täna saavutasin, mida ma ei oodanud?",
+        "quote": "The secret of getting ahead is getting started.",
+        "author": "Mark Twain"
+    },
+    {
+        "prompt": "Mis mind täna segas?",
+        "quote": "The successful warrior is the average man, with laser-like focus.",
+        "author": "Bruce Lee"
+    },
+    {
+        "prompt": "Millal ma täna kõige kohalolekut tundsin?",
+        "quote": "Wherever you are, be all there.",
+        "author": "Jim Elliot"
+    },
+    {
+        "prompt": "Millele ma täna vastu seisin ja miks?",
+        "quote": "What you resist persists.",
+        "author": "Carl Jung"
+    },
+    {
+        "prompt": "Kes mind täna inspireeris?",
+        "quote": "Surround yourself with people who inspire you.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "Mida ma täna lõin?",
+        "quote": "Creativity is intelligence having fun.",
+        "author": "Albert Einstein"
+    },
+    {
+        "prompt": "Millise võimaluse ma täna kasutamata jätsin?",
+        "quote": "In the middle of difficulty lies opportunity.",
+        "author": "Albert Einstein"
+    },
+    {
+        "prompt": "Millise võimaluse ma täna ära kasutasin?",
+        "quote": "Opportunities don't happen. You create them.",
+        "author": "Chris Grosser"
+    },
+    {
+        "prompt": "Kuidas ma täna frustratsiooniga toime tulin?",
+        "quote": "Between stimulus and response there is a space. In that space is our power to choose our response.",
+        "author": "Viktor Frankl"
+    },
+    {
+        "prompt": "Mis pani mind täna naerma?",
+        "quote": "Laughter is the shortest distance between two people.",
+        "author": "Victor Borge"
+    },
+    {
+        "prompt": "Mille pärast ma täna muretsesin, mis kunagi ei juhtunud?",
+        "quote": "Worry is like a rocking chair: it gives you something to do but never gets you anywhere.",
+        "author": "Erma Bombeck"
+    },
+    {
+        "prompt": "Millist väikest võitu saan täna tähistada?",
+        "quote": "Success is the sum of small efforts repeated day in and day out.",
+        "author": "Robert Collier"
+    },
+    {
+        "prompt": "Milline negatiivne mõte domineeris täna minu üle?",
+        "quote": "You are not your thoughts. You are the observer of your thoughts.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "Millise positiivse mõtte saan homsesse kaasa võtta?",
+        "quote": "Once you replace negative thoughts with positive ones, you'll start having positive results.",
+        "author": "Willie Nelson"
+    },
+    {
+        "prompt": "Kuidas ma täna kannatlikkust harjutasin?",
+        "quote": "Patience is not the ability to wait, but the ability to keep a good attitude while waiting.",
+        "author": "Joyce Meyer"
+    },
+    {
+        "prompt": "Kus mul täna kannatlikkusest puudu jäi?",
+        "quote": "Rivers know this: there is no hurry. We shall get there some day.",
+        "author": "A.A. Milne"
+    },
+    {
+        "prompt": "Millise komplimendi ma täna sain?",
+        "quote": "Accept compliments graciously. A simple thank you is more than enough.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "Millise komplimendi ma täna tegin?",
+        "quote": "Kind words can be short and easy to speak, but their echoes are truly endless.",
+        "author": "Mother Teresa"
+    },
+    {
+        "prompt": "Mida ma täna ainult enda jaoks tegin?",
+        "quote": "Self-care is giving the world the best of you, instead of what's left of you.",
+        "author": "Katie Reed"
+    },
+    {
+        "prompt": "Millise lubaduse ma täna pidasin?",
+        "quote": "Commitment is doing the thing you said you were going to do long after the mood you said it in has left you.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "Millise lubaduse ma täna murdsin?",
+        "quote": "Mistakes are proof that you are trying.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "Milline oli minu energiatase täna võrreldes eilsega?",
+        "quote": "Energy is the currency of life. Spend it wisely.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "Milline harjumus mulle täna kasuks tuli?",
+        "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+        "author": "Aristotle"
+    },
+    {
+        "prompt": "Milline harjumus mind täna takistas?",
+        "quote": "The chains of habit are too weak to be felt until they are too strong to be broken.",
+        "author": "Samuel Johnson"
+    },
+    {
+        "prompt": "Mida ma täna sõin ja kuidas see mind tundma pani?",
+        "quote": "Let food be thy medicine and medicine be thy food.",
+        "author": "Hippocrates"
+    },
+    {
+        "prompt": "Kui palju ma täna vett jõin?",
+        "quote": "Water is the driving force of all nature.",
+        "author": "Leonardo da Vinci"
+    },
+    {
+        "prompt": "Kui hästi ma eelmisel ööl magasin ja kuidas see tänast päeva mõjutas?",
+        "quote": "Sleep is the golden chain that ties health and our bodies together.",
+        "author": "Thomas Dekker"
+    },
+    {
+        "prompt": "Millist füüsilist ebamugavust ma täna kogesin?",
+        "quote": "The body is your temple. Keep it pure and clean for the soul to reside in.",
+        "author": "B.K.S. Iyengar"
+    },
+    {
+        "prompt": "Millal ma täna kõige rohkem teistega seotud tundsin?",
+        "quote": "Connection is why we're here. It's what gives purpose and meaning to our lives.",
+        "author": "Brené Brown"
+    },
+    {
+        "prompt": "Millal ma täna kõige enam üksikuna tundsin?",
+        "quote": "We're all islands shouting lies to each other across seas of misunderstanding.",
+        "author": "Rudyard Kipling"
+    },
+    {
+        "prompt": "Milline tehnoloogia andis mu päevale lisaväärtust?",
+        "quote": "Technology is best when it brings people together.",
+        "author": "Matt Mullenweg"
+    },
+    {
+        "prompt": "Milline tehnoloogia raiskas täna mu aega?",
+        "quote": "The cost of a thing is the amount of life which is required to be exchanged for it.",
+        "author": "Henry David Thoreau"
+    },
+    {
+        "prompt": "Millele ma täna ei ütlesin?",
+        "quote": "You can be a good person with a kind heart and still say no.",
+        "author": "Lori Deschene"
+    },
+    {
+        "prompt": "Millele ma täna jah ütlesin?",
+        "quote": "When you say yes to others, make sure you are not saying no to yourself.",
+        "author": "Paulo Coelho"
+    },
+    {
+        "prompt": "Mis tekitas minus täna stressi?",
+        "quote": "It's not stress that kills us, it is our reaction to it.",
+        "author": "Hans Selye"
+    },
+    {
+        "prompt": "Kuidas ma täna stressiga toime tulin?",
+        "quote": "You must learn to let go. Release the stress. You were never in control anyway.",
+        "author": "Steve Maraboli"
+    },
+    {
+        "prompt": "Mis pani mind täna väärtustatuna tundma?",
+        "quote": "The greatest good you can do for another is not just to share your riches but to reveal to him his own.",
+        "author": "Benjamin Disraeli"
+    },
+    {
+        "prompt": "Mis pani mind täna nähtamatuna tundma?",
+        "quote": "The worst distance between two people is misunderstanding.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "Mida ma täna edasi lükkasin?",
+        "quote": "Procrastination is the art of keeping up with yesterday.",
+        "author": "Don Marquis"
+    },
+    {
+        "prompt": "Mille ma täna lõpetasin, mida olin edasi lükanud?",
+        "quote": "The way to get started is to quit talking and begin doing.",
+        "author": "Walt Disney"
+    },
+    {
+        "prompt": "Millise riski ma täna võtsin?",
+        "quote": "Do one thing every day that scares you.",
+        "author": "Eleanor Roosevelt"
+    },
+    {
+        "prompt": "Millist riski ma täna vältisin?",
+        "quote": "The biggest risk is not taking any risk.",
+        "author": "Mark Zuckerberg"
+    },
+    {
+        "prompt": "Kuidas ma täna kriitikale reageerisin?",
+        "quote": "Criticism, like rain, should be gentle enough to nourish a person's growth without destroying their roots.",
+        "author": "Frank A. Clark"
+    },
+    {
+        "prompt": "Millist tagasisidet ma täna andsin?",
+        "quote": "Feedback is the breakfast of champions.",
+        "author": "Ken Blanchard"
+    },
+    {
+        "prompt": "Mida ma täna tegin, mille eest tulevane mina mulle tänulik on?",
+        "quote": "Someone is sitting in the shade today because someone planted a tree long ago.",
+        "author": "Warren Buffett"
+    },
+    {
+        "prompt": "Mida ma täna tegin, mida tulevane mina kahetseb?",
+        "quote": "In the end, we only regret the chances we didn't take.",
+        "author": "Lewis Carroll"
+    },
+    {
+        "prompt": "Kuidas mu hommik päevale tooni andis?",
+        "quote": "How you start your day is how you live your day. How you live your day is how you live your life.",
+        "author": "Louise Hay"
+    },
+    {
+        "prompt": "Milline oli mu tuju päeva jooksul?",
+        "quote": "You can't stop the waves, but you can learn to surf.",
+        "author": "Jon Kabat-Zinn"
+    },
+    {
+        "prompt": "Mis pani mind täna kontrolli all tundma?",
+        "quote": "You are not a drop in the ocean. You are the entire ocean in a drop.",
+        "author": "Rumi"
+    },
+    {
+        "prompt": "Mis pani mind täna kontrolli alt väljas tundma?",
+        "quote": "Life is 10% what happens to you and 90% how you react to it.",
+        "author": "Charles R. Swindoll"
+    },
+    {
+        "prompt": "Millist ilu ma täna märkasin?",
+        "quote": "The world is full of magic things, patiently waiting for our senses to grow sharper.",
+        "author": "W.B. Yeats"
+    },
+    {
+        "prompt": "Millist liikumist või trenni ma täna tegin?",
+        "quote": "Take care of your body. It's the only place you have to live.",
+        "author": "Jim Rohn"
+    },
+    {
+        "prompt": "Kui kohal ma täna oma vestlustes olin?",
+        "quote": "Most people do not listen with the intent to understand; they listen with the intent to reply.",
+        "author": "Stephen R. Covey"
+    },
+    {
+        "prompt": "Mis pani mind täna loovalt tundma?",
+        "quote": "Creativity takes courage.",
+        "author": "Henri Matisse"
+    },
+    {
+        "prompt": "Milline rutiin mind täna ankurdas?",
+        "quote": "The secret of your future is hidden in your daily routine.",
+        "author": "Mike Murdock"
+    },
+    {
+        "prompt": "Mis mu täna rutiinist välja lõi?",
+        "quote": "Life is what happens when you're busy making other plans.",
+        "author": "John Lennon"
+    },
+    {
+        "prompt": "Kuidas ma täna eestvedamist näitasin?",
+        "quote": "Leadership is not about being in charge. It's about taking care of those in your charge.",
+        "author": "Simon Sinek"
+    },
+    {
+        "prompt": "Millise konfliktiga ma täna toime tulin?",
+        "quote": "Peace is not the absence of conflict, but the ability to cope with it.",
+        "author": "Dorothy Thompson"
+    },
+    {
+        "prompt": "Mis pani mind täna rahulolevana tundma?",
+        "quote": "Contentment is not the fulfillment of what you want, but the realization of how much you already have.",
+        "author": "Unknown"
+    },
+    {
+        "prompt": "Mis jättis mind täna täitmatult tundma?",
+        "quote": "The only impossible journey is the one you never begin.",
+        "author": "Tony Robbins"
+    },
+    {
+        "prompt": "Kuidas ma täna oma aega investeerisin?",
+        "quote": "Time is more valuable than money. You can get more money, but you cannot get more time.",
+        "author": "Jim Rohn"
+    },
+    {
+        "prompt": "Mis katkestas mu täna fookuse?",
+        "quote": "Concentrate all your thoughts upon the work at hand. The sun's rays do not burn until brought to a focus.",
+        "author": "Alexander Graham Bell"
+    },
+    {
+        "prompt": "Mida ma täna andeks andsin - endale või teistele?",
+        "quote": "Forgiveness is giving up the hope that the past could have been any different.",
+        "author": "Oprah Winfrey"
+    },
+    {
+        "prompt": "Millise tarkuse tänasest päevast kaasa võtan?",
+        "quote": "The only true wisdom is in knowing you know nothing.",
+        "author": "Socrates"
+    },
+    {
+        "prompt": "Kuidas ma tänase päeva oluliseks muutsin?",
+        "quote": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate.",
+        "author": "Ralph Waldo Emerson"
+    },
+    {
+        "prompt": "Mida ma ütleksin kellelegi, kellel oli täpselt samasugune päev nagu minul?",
+        "quote": "Be kind, for everyone you meet is fighting a harder battle.",
+        "author": "Plato"
+    },
+    {
+        "prompt": "Mida ma homme ootan?",
+        "quote": "Tomorrow is a new day with no mistakes in it yet.",
+        "author": "L.M. Montgomery"
+    }
+]
