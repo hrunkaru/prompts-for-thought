@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self-Reflection Prompts</title>
     <style>
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            font-size: 0.85em;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+            color: rgba(255, 255, 255, 0.6);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            color: white;
+        }
+
+        .lang-btn.active {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.5);
+            color: white;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -205,14 +239,19 @@
     </style>
 </head>
 <body>
+    <div class="language-switcher">
+        <button class="lang-btn active" id="langEn" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" id="langEt" onclick="setLanguage('et')">ET</button>
+    </div>
+
     <div class="container">
         <div class="category-selection" id="categorySelection">
-            <p class="intro-text">Choose a type of prompt</p>
+            <p class="intro-text" id="introText">Choose a type of prompt</p>
             <div class="category-buttons">
-                <button class="category-btn" onclick="selectCategory('daily')">
+                <button class="category-btn" id="dailyBtn" onclick="selectCategory('daily')">
                     Daily Reflection
                 </button>
-                <button class="category-btn" onclick="selectCategory('deep')">
+                <button class="category-btn" id="deepBtn" onclick="selectCategory('deep')">
                     Deep Thoughts
                 </button>
             </div>
@@ -224,7 +263,7 @@
                 <div id="quoteText"></div>
                 <span class="quote-author" id="quoteAuthor"></span>
             </div>
-            
+
             <div class="timer-section">
                 <div class="timer-display" id="timerText">Let that question sink in for another 30s</div>
                 <div class="button-group">
@@ -236,6 +275,35 @@
     </div>
 
     <script>
+        // Translations
+        const translations = {
+            en: {
+                pageTitle: 'Self-Reflection Prompts',
+                introText: 'Choose a type of prompt',
+                dailyBtn: 'Daily Reflection',
+                deepBtn: 'Deep Thoughts',
+                timerText: 'Let that question sink in for another',
+                readyText: 'Ready when you are',
+                nextBtn: 'Another prompt please',
+                backBtn: 'Back to type selection',
+                errorLoading: 'Error loading prompts. Please make sure the prompt files are in the same directory.',
+                notLoaded: 'Prompts not loaded yet. Please wait a moment and try again.'
+            },
+            et: {
+                pageTitle: 'Eneserefleksiooni küsimused',
+                introText: 'Vali küsimuse tüüp',
+                dailyBtn: 'Igapäevane refleksioon',
+                deepBtn: 'Sügavad mõtted',
+                timerText: 'Lase sellel küsimusel settida veel',
+                readyText: 'Kui oled valmis',
+                nextBtn: 'Järgmine küsimus palun',
+                backBtn: 'Tagasi tüübi valikule',
+                errorLoading: 'Viga küsimuste laadimisel. Palun veendu, et küsimuste failid on samas kaustas.',
+                notLoaded: 'Küsimused pole veel laaditud. Palun oota hetk ja proovi uuesti.'
+            }
+        };
+
+        let currentLanguage = localStorage.getItem('language') || 'en';
         let prompts = {
             daily: [],
             deep: []
@@ -245,35 +313,69 @@
         let timeRemaining = 30;
         const TIMER_DURATION = 30;
 
+        // Update UI text based on current language
+        function updateUIText() {
+            const t = translations[currentLanguage];
+            document.title = t.pageTitle;
+            document.getElementById('introText').textContent = t.introText;
+            document.getElementById('dailyBtn').textContent = t.dailyBtn;
+            document.getElementById('deepBtn').textContent = t.deepBtn;
+            document.getElementById('nextBtn').textContent = t.nextBtn;
+            document.getElementById('backBtn').textContent = t.backBtn;
+            updateTimerDisplay();
+
+            // Update language button states
+            document.getElementById('langEn').classList.toggle('active', currentLanguage === 'en');
+            document.getElementById('langEt').classList.toggle('active', currentLanguage === 'et');
+
+            // Update html lang attribute
+            document.documentElement.lang = currentLanguage;
+        }
+
+        // Set language and reload prompts
+        async function setLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('language', lang);
+            updateUIText();
+            await loadPrompts();
+
+            // If currently viewing a prompt, load a new one in the new language
+            if (currentCategory) {
+                loadRandomPrompt();
+            }
+        }
+
         // Load prompts from JSON files
         async function loadPrompts() {
             try {
-                const dailyResponse = await fetch('daily-prompts.json');
-                const deepResponse = await fetch('deep-prompts.json');
-                
+                const suffix = currentLanguage === 'en' ? '' : `-${currentLanguage}`;
+                const dailyResponse = await fetch(`daily-prompts${suffix}.json`);
+                const deepResponse = await fetch(`deep-prompts${suffix}.json`);
+
                 if (!dailyResponse.ok || !deepResponse.ok) {
                     throw new Error('Failed to load prompts');
                 }
-                
+
                 prompts.daily = await dailyResponse.json();
                 prompts.deep = await deepResponse.json();
-                
-                console.log('Prompts loaded successfully');
+
+                console.log('Prompts loaded successfully for language:', currentLanguage);
             } catch (error) {
                 console.error('Error loading prompts:', error);
-                alert('Error loading prompts. Please make sure daily-prompts.json and deep-prompts.json are in the same directory.');
+                alert(translations[currentLanguage].errorLoading);
             }
         }
 
         // Load prompts when page loads
         loadPrompts();
+        updateUIText();
 
         function selectCategory(category) {
             if (prompts[category].length === 0) {
-                alert('Prompts not loaded yet. Please wait a moment and try again.');
+                alert(translations[currentLanguage].notLoaded);
                 return;
             }
-            
+
             currentCategory = category;
             document.getElementById('categorySelection').style.display = 'none';
             document.getElementById('promptDisplay').classList.add('active');
@@ -283,9 +385,9 @@
         function loadRandomPrompt() {
             const categoryPrompts = prompts[currentCategory];
             const randomPrompt = categoryPrompts[Math.floor(Math.random() * categoryPrompts.length)];
-            
+
             document.getElementById('promptText').textContent = randomPrompt.prompt;
-            
+
             const quoteContainer = document.getElementById('quoteContainer');
             if (randomPrompt.quote) {
                 document.getElementById('quoteText').textContent = `"${randomPrompt.quote}"`;
@@ -294,7 +396,7 @@
             } else {
                 quoteContainer.style.display = 'none';
             }
-            
+
             startTimer();
         }
 
@@ -303,29 +405,29 @@
             if (timerInterval) {
                 clearInterval(timerInterval);
             }
-            
+
             timeRemaining = TIMER_DURATION;
-            
+
             // Get button elements
             const nextBtn = document.getElementById('nextBtn');
             const backBtn = document.getElementById('backBtn');
-            
+
             // Disable buttons at start
             nextBtn.disabled = true;
             backBtn.disabled = true;
-            
+
             console.log('Timer started - buttons disabled');
-            
+
             // Update display immediately
             updateTimerDisplay();
-            
+
             // Start countdown
             timerInterval = setInterval(() => {
                 timeRemaining--;
                 updateTimerDisplay();
-                
+
                 console.log('Time remaining:', timeRemaining);
-                
+
                 if (timeRemaining <= 0) {
                     clearInterval(timerInterval);
                     nextBtn.disabled = false;
@@ -337,10 +439,11 @@
 
         function updateTimerDisplay() {
             const timerText = document.getElementById('timerText');
+            const t = translations[currentLanguage];
             if (timeRemaining > 0) {
-                timerText.textContent = 'Let that question sink in for another ' + timeRemaining + 's';
+                timerText.textContent = t.timerText + ' ' + timeRemaining + 's';
             } else {
-                timerText.textContent = 'Ready when you are';
+                timerText.textContent = t.readyText;
             }
         }
 
