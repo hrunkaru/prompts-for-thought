@@ -248,6 +248,9 @@
         <div class="category-selection" id="categorySelection">
             <p class="intro-text" id="introText">Choose a type of prompt</p>
             <div class="category-buttons">
+                <button class="category-btn" id="morningBtn" onclick="selectCategory('morning')">
+                    Morning Intentions
+                </button>
                 <button class="category-btn" id="dailyBtn" onclick="selectCategory('daily')">
                     Daily Reflection
                 </button>
@@ -280,6 +283,7 @@
             en: {
                 pageTitle: 'Self-Reflection Prompts',
                 introText: 'Choose a type of prompt',
+                morningBtn: 'Morning Intentions',
                 dailyBtn: 'Daily Reflection',
                 deepBtn: 'Deep Thoughts',
                 timerText: 'Let that question sink in for another',
@@ -292,7 +296,8 @@
             et: {
                 pageTitle: 'Eneserefleksiooni küsimused',
                 introText: 'Vali küsimuse tüüp',
-                dailyBtn: 'Igapäevane refleksioon',
+                morningBtn: 'Hommikused kavatsused',
+                dailyBtn: 'Päeva refleksioon',
                 deepBtn: 'Sügavad mõtted',
                 timerText: 'Lase sellel küsimusel veel settida',
                 readyText: 'Kui oled valmis',
@@ -305,6 +310,7 @@
 
         let currentLanguage = localStorage.getItem('language') || 'en';
         let prompts = {
+            morning: [],
             daily: [],
             deep: []
         };
@@ -318,6 +324,7 @@
             const t = translations[currentLanguage];
             document.title = t.pageTitle;
             document.getElementById('introText').textContent = t.introText;
+            document.getElementById('morningBtn').textContent = t.morningBtn;
             document.getElementById('dailyBtn').textContent = t.dailyBtn;
             document.getElementById('deepBtn').textContent = t.deepBtn;
             document.getElementById('nextBtn').textContent = t.nextBtn;
@@ -349,13 +356,15 @@
         async function loadPrompts() {
             try {
                 const suffix = currentLanguage === 'en' ? '' : `-${currentLanguage}`;
+                const morningResponse = await fetch(`morning-prompts${suffix}.json`);
                 const dailyResponse = await fetch(`daily-prompts${suffix}.json`);
                 const deepResponse = await fetch(`deep-prompts${suffix}.json`);
 
-                if (!dailyResponse.ok || !deepResponse.ok) {
+                if (!morningResponse.ok || !dailyResponse.ok || !deepResponse.ok) {
                     throw new Error('Failed to load prompts');
                 }
 
+                prompts.morning = await morningResponse.json();
                 prompts.daily = await dailyResponse.json();
                 prompts.deep = await deepResponse.json();
 
